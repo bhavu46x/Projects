@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #FDEB71, #F8D800, #F06292, #AB47BC);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header {
+    background-color: MediumSlateBlue; /* White */
+    color: White; /* Dark text for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.language-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.language-card {
+    background-color: rgba(40, 53, 147, 0.8); /* Navy Blue with transparency */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.language-card:hover {
+    transform: scale(1.1);
+    background-color: rgba(40, 53, 147, 1); /* Opaque on hover */
+}
+
+.language-card a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #778899;
+    color: white;
+    text-align: center;
+    padding: 02px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
